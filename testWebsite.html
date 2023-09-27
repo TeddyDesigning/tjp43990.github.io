@@ -1,58 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="Rectangle1" style="width: 1920px; height: 12282px; background: #EDEDED"></div>
-    <div class="Rectangle42" style="width: 1920px; height: 649px; background: #E27D60"></div>
-           <div class="HersheyParkARenownedAmusementParkFeaturingExcitingRidesLiveEntertainmentAndAnOpportunityToLearnAboutChocolateMakingAtHersheySChocolateWorldWebsiteWwwHersheyparkCom" style="width: 1232px; height: 466px"><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">1. Hershey Park: </span><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word">A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World. Website: www.hersheypark.com</span></div>
-<img class="Image1" style="width: 1920px; height: 584px" src="https://via.placeholder.com/1920x584" />
+    <style>
+      body {
+        background-color: lightgray;
+      }
+      main {
+        width: 1920px;
+        margin: 0 auto;
+        background-color: white;
+      }
+      #content {
+        padding: 0 40px;
+      }
+      .card {
+        display: flex;
+        margin-bottom: 200px;
+      }
+      .card.opposite {
+        flex-direction: row-reverse;
+        background-color: #C38D9E;
+      }
+      .card-desc {
+          background-color: #e8a87c;
+          margin: 40px 0;
+          padding: 40px;
+        } 
+        img {
+          border: 25px solid #e27d60;
+        }
+        header{
+          height: 178px;
+          background-color: #00DBE9;
+        }
+        footer {
+        height: 178px;
+        background-color: #00DBE9;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>PA Tourism Central PA Destinations</header>
+      <link rel="shortcut icon" href="./images/favicon.ico">
+      <style>
+        .imgMain {
+          display: block;
+          margin-left: auto;
+          margin-right: auto
+        }
+      </style>
+      <div id="hero"><img src="./images/PAHeader.jpg" alt="PAHeader" class="imgMain"  /></div>
+      <div id="content">
+        <!-- Card -->
+        <div class="card">
+          <div><img src="./images/hersheypark.jpg.jpg" alt="hersheypark" /></div>
+          <div class="card-desc">
+            <h3>1. Hershey Park:</h3>
+            <meta charset="utf-8">
+            <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+            <style>
+              body {
+                font-family: 'Didact+Gothic&display', serif;
+                font-size: 30px;
+              }
+            </style>
+            <p>
+              A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World. 
+              Website: www.hersheypark.com
+            </p>
+          </div>
+        </div>
+        <!-- /Card -->
 
-    <div class="Rectangle43" style="width: 1816px; height: 512px; background: #E8A87C"></div>
-      <div class="GettysburgNationalMilitaryParkSiteOfThePivotalBattleOfGettysburgDuringTheCivilWarOfferingGuidedToursHistoricMonumentsAndAVisitorCenterWithExhibitsWebsiteWwwNpsGovGett" style="width: 1232px; height: 467px"><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">2. Gettysburg National Military Park:</span><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits. Website: www.nps.gov/gett</span></div>
-     <img class="Image2" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+        <!-- Card -->
+        <div class="card opposite">
+          <div><img src="./images/gettysburg.jpg" alt="gettysburg" /></div>
+          <div class="card opposite">
+            <p>
+              Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits. Website: www.nps.gov/gett
+            </p>
+          <h3>2. Gettysburg National Military Park:</h3>
+        </div>
+        </div>
+        <!-- /Card -->
 
- <div class="Rectangle45" style="width: 1816px; height: 512px; background: #C38D9E"></div>
-      <div class="PennsylvaniaStateCapitolAnImpressiveArchitecturalGemInHarrisburgShowcasingExquisiteArtworkStunningInteriorsAndGuidedToursToLearnAboutTheStateSGovernmentAndHistoryWebsiteWwwPacapitolCom" style="width: 1218px; height: 440px"><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">3. Pennsylvania State Capitol:</span><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history. Website: www.pacapitol.com</span></div>
-      <img class="Image2" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+        <!-- Card -->
+        <div class="card">
+          <div><img src="./images/statecapitol.jpg" alt="statecapitol" /></div>
+          <div class="card-desc">
+            <h3>3. Pennsylvania State Capitol:</h3>
+            <p>
+              An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, 
+              and guided tours to learn about the state's government and history. Website: www.pacapitol.com
+            </p>
+          </div>
+        </div>
+        <!-- /Card -->
 
-<div class="Rectangle47" style="width: 1816px; height: 512px; background: #E8A87C"></div>
-        <div class="RaystownLakeAScenicReservoirNearHuntingdonOfferingBoatingFishingHikingAndCampingAmidPicturesqueLandscapesAndWaterActivitiesWebsiteWwwNabUsaceArmyMilMissionsDamsRecreationRaystown" style="width: 1192px; height: 444px"><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">4. Raystown Lake:</span><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities. Website: www.nab.usace.army.mil/Missions/Dams-Recreation/Raystown</span></div>
-    <img class="Image2" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+ <!-- Card -->
+ <div class="card opposite">
+  <div><img src="./images/raystown.jpg" alt="raystown" /></div>
+  <div class="card opposite">
+    <p>
+      A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and 
+      camping amid picturesque landscapes and water activities. Website: www.nab.usace.army.mil/Missions/Dams-Recreation/Raystown
+    </p>
+    <h3>4. Raystown Lake:</h3>
+  </div>
+</div>
 
-<div class="Rectangle48" style="width: 1816px; height: 512px; background: #C38D9E"></div>
-        <div class="RailroadMuseumOfPennsylvaniaLocatedInStrasburgThisMuseumBoastsAnExtensiveCollectionOfVintageLocomotivesRailCarsAndExhibitsShowcasingTheRichHistoryOfRailroadingWebsiteWwwRrmuseumpaOrg" style="width: 1176px; height: 432px"><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">5. Railroad Museum of Pennsylvania:</span><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading. Website: www.rrmuseumpa.org</span></div>
-    <img class="Image2" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+        <!-- Card -->
+        <div class="card">
+          <div><img src="./images/railroad.jpg" alt="railroad" /></div>
+          <div class="card-desc">
+            <h3>5. Railroad Museum of Pennsylvania:</h3>
+            <p>
+              Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, 
+              rail cars, and exhibits, showcasing the rich history of railroading. Website: www.rrmuseumpa.org
+            </p>
+          </div>
+        </div>
 
-    <div class="Rectangle49" style="width: 1816px; height: 512px; background: #E8A87C"></div>
-       <div class="CentralMarketYorkTheOldestContinuouslyOperatingFarmersMarketInTheUSOfferingABustlingAtmosphereLocalProduceCraftsAndDiverseFoodVendorsWebsiteWwwCentralmarketyorkCom" style="width: 1198px; height: 484px"><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">6. Central Market York:</span><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors. Website: www.centralmarketyork.com</span></div>
-    <img class="Image2" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+<!-- Card -->
+<div class="card opposite">
+  <div><img src="./images/york.jpg" alt="york" /></div>
+  <div class="card opposite">
+    <p>
+      The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, 
+      local produce, crafts, and diverse food vendors. Website: www.centralmarketyork.com
+    </p>
+    <h3>6. Central Market York:</h3>
+  </div>
+</div>
+<!-- /Card -->
 
-<div class="Rectangle50" style="width: 1816px; height: 512px; background: #C38D9E"></div>
-        <div class="PineGroveFurnaceStateParkServingAsTheGatewayToTheAppalachianTrailThisParkOffersHikingPicnickingAndSwimmingOpportunitiesAlongWithHistoricFeaturesAndNaturalBeautyWebsiteWwwDcnrPaGovStateparksFindaparkPinegrovefurnacestatepark" style="width: 1230px; height: 458px"><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">7. Pine Grove Furnace State Park:</span><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty. Website: www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark</span></div>
-    <img class="Image4" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+<!-- Card -->
+<div class="card">
+  <div><img src="./images/pinegrove.jpg" alt="pinegrove" /></div>
+  <div class="card-desc">
+    <h3>7. Pine Grove Furnace State Park:</h3>
+    <p>
+      Serving as the "Gateway to the Appalachian Trail," this park
+      offers hiking, picnicking, and swimming opportunities, along with
+      historic features and natural beauty. Website:
+      www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark
+    </p>
+  </div>
+</div>
+<!-- /Card -->
 
-    <div class="Rectangle51" style="width: 1816px; height: 512px; background: #E8A87C"></div>
-    <div class="WorldsEndStateParkSituatedInTheEndlessMountainsThisParkIsKnownForItsRuggedBeautyWithHikingTrailsWaterfallsAndBreathtakingViewsOfTheLoyalsockCreekGorgeWebsiteWwwDcnrPaGovStateparksFindaparkWorldsendstatepark" style="width: 1184px; height: 440px"><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">8. Worlds End State Park:</span><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge. Website: www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark</span></div>
-    <img class="Image5" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+<!-- Card -->
+<div class="card opposite">
+  <div><img src="./images/worldsend.jpg" alt="worldsend" /></div>
+  <div class="card opposite">
+    <p>
+      Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, 
+      waterfalls, and breathtaking views of the Loyalsock Creek Gorge. Website: www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark
+    </p>
+    <h3>8. Worlds End State Park:</h3>
+  </div>
+</div>
+<!-- /Card -->
 
- <div class="Rectangle52" style="width: 1816px; height: 512px; background: #C38D9E"></div>
-    <div class="LewisburgACharmingSmallTownKnownForItsHistoricDowntownOfferingBoutiqueShopsGalleriesAndRestaurantsAsWellAsAttractionsLikeTheLewisburgFarmersMarketAndPackwoodHouseMuseumWebsiteWwwLewisburgpaCom" style="width: 1222px; height: 460px"><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">9. Lewisburg:</span><span style="color: black; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum. Website: www.lewisburgpa.com</span></div>
-    <img class="Image6" style="width: 597px; height: 597px" src="https://via.placeholder.com/597x597" />
+<!-- Card -->
+<div class="card">
+<div><img src="./images/lewisburg.jpg" alt="lewisburg" /></div>
+<div class="card-desc">
+<h3>9. Lewisburg:</h3>
+<p>
+  A charming small town known for its historic downtown, offering boutique shops, galleries, 
+  and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum. Website: www.lewisburgpa.com
+</p>
+</div>
+</div>
 
-    <div class="Rectangle53" style="width: 1816px; height: 512px; background: #E8A87C"></div>
-    <div class="ThePennsylvaniaGrandCanyonAlsoKnownAsPineCreekGorgeThisNaturalWonderFeaturesStunningVistasHikingTrailsAndOpportunitiesForOutdoorRecreationWebsiteWwwDcnrPaGovStateparksFindaparkColtonpointstatepark" style="width: 1234px; height: 464px"><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">10. The Pennsylvania Grand Canyon:</span><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation. Website: www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark</span></div>
-    <img class="Image7" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
+<!-- Card -->
+<div class="card opposite">
+  <div><img src="./images/grand-canyon-of-pennsylvania.jpg" alt="grand-canyon-of-pennsylvania" /></div>
+  <div class="card opposite">
+    <p>
+      Also known as Pine Creek Gorge, this natural wonder features stunning vistas, 
+      hiking trails, and opportunities for outdoor recreation. Website: www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark
+    </p>
+    <h3>10. Pennsylvania Grand Canyon:</h3>
+  </div>
+</div>
 
-<div class="Rectangle54" style="width: 1816px; height: 512px; background: #C38D9E"></div>
-   <div class="ThePennsylvaniaGrandCanyonAlsoKnownAsPineCreekGorgeThisNaturalWonderFeaturesStunningVistasHikingTrailsAndOpportunitiesForOutdoorRecreationWebsiteWwwDcnrPaGovStateparksFindaparkColtonpointstatepark" style="width: 1234px; height: 464px"><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">10. The Pennsylvania Grand Canyon:</span><span style="color: white; font-size: 32px; font-family: Inter; font-weight: 400; word-wrap: break-word"> Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation. Website: www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark</span></div>
-    <img class="Image8" style="width: 598px; height: 598px" src="https://via.placeholder.com/598x598" />
-
-    <div class="Rectangle46" style="width: 1920px; height: 178px; background: #E27D60"></div>
-    <div class="Rectangle47" style="width: 637px; height: 658px; background: #E27D60"></div>
-    <div class="Rectangle48" style="width: 636px; height: 658px; background: #E27D60"></div>
-</body>
+        <!-- /Card -->
+      </div>
+      <footer>Footer</footer>
+    </main>
+  </body>
 </html>
