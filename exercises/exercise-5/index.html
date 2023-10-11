@@ -1,144 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Example</title>
     <style>
-      :root {
-        --header-width: 250px;
-        --base-gray: #d9d9d9;
-        --bg-color: #4e6876;
-        --padding-small: 1em;
-        --padding-medium: 1em;
-        --margin-medium: 1em;
-        --margin-medium: 2em;
-        --gap: 1em;
-      }
-      /* * = Applies to everything. Don't count border as part of width */
-      * {
-        box-sizing: border-box;
-      }
-      /* Draw border so we can see elements */
-      figure,
-      div {
-        border: 1px solid gray;
-      }
-      body {
-        background-color: var(--bg-color);
-        margin: 0;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      /* Header */
-      header {
-        padding: var(--padding-small);
-        background-color: var(--base-gray);
-        #logo {
-          width: var(--header-width);
-          h1 {
-            margin: 0;
-          }
+        :root {
+            --header-width: 250px;
+            --base-gray: #d9d9d9;
+            --bg-color: #4e6876;
+            --padding-small: 1em;
+            --padding-medium: 1em;
+            --margin-medium: 1em;
+            --margin-medium: 2em;
+            --gap: 1em;
         }
-        nav {
-          text-align: right;
-          width: calc(100% - var(--header-width));
 
-          ul {
-            margin: 0;
-          }
-          li {
-            display: inline;
-          }
-          a {
-            padding: var(--padding-medium);
-          }
+        /* * = Applies to everything. Don't count border as part of width */
+        * {
+            box-sizing: border-box;
         }
-      }
-      main {
-        max-width: 1200px;
-        margin: 1em auto;
-        min-height: 400px;
-        background-color: #fff;
-        padding: var(--gap);
 
+        /* Draw border so we can see elements */
+        figure,
+        div {
+            border: 1px solid gray;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Header */
+        header {
+            padding: var(--padding-small);
+            background-color: var(--base-gray);
+
+            #logo {
+                width: var(--header-width);
+
+                h1 {
+                    margin: 0;
+                }
+            }
+
+            nav {
+                text-align: right;
+                width: calc(100% - var(--header-width));
+
+                ul {
+                    margin: 0;
+                }
+
+                li {
+                    display: inline;
+                }
+
+                a {
+                    padding: var(--padding-medium);
+                }
+            }
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 1em auto;
+            min-height: 400px;
+            background-color: #fff;
+            padding: var(--gap);
+
+            .row {
+                margin: var(--margin-medium);
+            }
+        }
+
+        /* Intro */
+        #hero-image {
+            width: 45%;
+        }
+
+        #intro {
+            width: 55%;
+        }
+
+        /* Figure */
+        figure.card {
+            margin: 0;
+        }
+
+        /* Utilities */
         .row {
-          margin: var(--margin-medium);
+            display: flex;
+            margin: 0 auto;
+            max-width: 1100px;
+            gap: var(--gap);
+            justify-content: space;
         }
-      }
-      /* Intro */
-      #hero-image {
-        width: 45%;
-      }
-      #intro {
-        width: 55%;
-      }
-      /* Figure */
-      figure.card {
-        margin: 0;
-      }
-      /* Utilities */
-      .row {
-        display: flex;
-        margin: 0 auto;
-        max-width: 1100px;
-        gap: var(--gap);
-        justify-content: space;
-      }
-      @media screen {
-      }
+
+        @media screen {}
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header -->
     <header>
-      <div class="row">
-        <div id="logo"><h1>Learning Poker</h1></div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="texas-hold-em.html">Texas Hold'em</a></li>
-            <li><a href="variants/popular-poker-variants.html">Popular Poker Variants</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="row">
+            <div id="logo">
+                <h1>Learning Poker</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="texas-hold-em.html">Texas Hold'em</a></li>
+                    <li><a href="variants/popular-poker-variants.html">Popular Poker Variants</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-      <!-- INTRO -->
-      <div class="row">
-        <div id="hero-image">
-          <img src="./Images/pexels-01.jpg" alt="" />
+        <!-- INTRO -->
+        <div class="row">
+            <div id="hero-image">
+                <img src="./Images/pexels-01.jpg" alt="" />
+            </div>
+            <div id="intro">
+                <h2>Welcome to the World of Poker</h2>
+                <p>
+                    Poker is a timeless card game that has captivated players for
+                    generations. Whether you're a beginner looking to learn the basics
+                    or a seasoned player seeking to refine your skills, this microsite
+                    is your comprehensive guide to the world of poker. Join us on a
+                    journey into the exciting realm of bluffs, bets, and strategic
+                    gameplay.
+                </p>
+            </div>
         </div>
-        <div id="intro">
-          <h2>Welcome to the World of Poker</h2>
-          <p>
-            Poker is a timeless card game that has captivated players for
-            generations. Whether you're a beginner looking to learn the basics
-            or a seasoned player seeking to refine your skills, this microsite
-            is your comprehensive guide to the world of poker. Join us on a
-            journey into the exciting realm of bluffs, bets, and strategic
-            gameplay.
-          </p>
+        <!-- CARDS -->
+        <div class="row cardholder">
+            <figure class="card">
+                <a href="#"><img src="./Images/pexels-02.jpg" alt="" /></a>
+                <figcaption><a href="https://www.youtube.com/watch?v=CpSewSHZhmo">How To Play Poker Tutorial</a></figcaption>
+            </figure>
+            <figure class="card">
+                <a href="#"><img src="./Images/pexels-03.jpg" alt="" /></a>
+                <figcaption><a href="https://www.youtube.com/watch?v=GAoR9ji8D6A">How To Play Texas Hold'em</a></figcaption>
+            </figure>
+            <figure class="card">
+                <a href="#"><img src="./Images/pexels-04.jpg" alt="" /></a>
+                <figcaption><a href="https://www.youtube.com/watch?v=uH4cxjbdokM&list=PLXKD8eHDGk0Gejmx7yuTiBzIixfQ7pSnW">What Are Some Popular Poker Variants</a></figcaption>
+            </figure>
         </div>
-      </div>
-      <!-- CARDS -->
-      <div class="row cardholder">
-        <figure class="card">
-          <a href="#"><img src="./Images/pexels-02.jpg" alt="" /></a>
-          <figcaption><a href="#">Caption</a></figcaption>
-        </figure>
-        <figure class="card">
-          <a href="#"><img src="./Images/pexels-03.jpg" alt="" /></a>
-          <figcaption><a href="#">Caption</a></figcaption>
-        </figure>
-        <figure class="card">
-          <a href="#"><img src="./Images/pexels-04.jpg" alt="" /></a>
-          <figcaption><a href="#">Caption</a></figcaption>
-        </figure>
-      </div>
     </main>
-  </body>
+</body>
+
 </html>
