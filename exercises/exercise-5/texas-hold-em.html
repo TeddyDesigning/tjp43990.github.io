@@ -113,7 +113,23 @@
             justify-content: space;
         }
 
-        @media screen {}
+        @media (max-width: 720px) {
+            .row{
+                flex-direction: column;
+                display: block;
+                width:fit-content;
+            }
+            #logo{
+                text-align: center;
+            }
+            #hero-image {
+                width: fit-content;
+            }
+            #intro {
+                width: fit-content;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 
