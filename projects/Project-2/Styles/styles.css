@@ -90,7 +90,14 @@ nav {
    flex-basis: 25%;
 }
 
-#num-steps-img {
+#num-steps-img1 {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+
+}
+
+#num-steps-img2 {
    width: 200px;
    height: 200px;
    object-fit: cover;
