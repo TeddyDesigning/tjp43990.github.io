@@ -1,0 +1,32 @@
+.carousel-item {
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel slide{
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container{
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  }
+
