@@ -6,16 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/styles.css">
-    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .HomePage {
+            width: 100%;
+            max-width: auto;
+            height: auto;
+            position: relative;
+            background: white;
+            margin: 0 auto;
+        }
+
+        .Rectangle29 {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            background: #ACD7F9;
+        }
+
+        .AliceInWonderlan {
+            width: 70%;
+            max-width: auto;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 220px;
+            position: absolute;
+        }
+
+        .Image1 {
+            width: 40%;
+            max-width: auto;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 255px;
+            position: absolute;
+        }
+
+        .rectangle6 {
+            background: #333; /* Change color as needed */
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .nav-links {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .AuthorInfo {
+            width: 130px;
+            height: 54px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
+            word-wrap: break-word;
+        }
+
+        .nav-style {
+            width: 100px; /* Adjust width as needed */
+        }
+
+        /* Add more media queries as needed */
+        @media screen and (max-width: 768px) {
+            .AliceInWonderlan {
+                width: 90%;
+            }
+
+            .Image1 {
+                width: 60%;
+            }
+
+            .nav-links {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <main>
-
-        <div class="HomePage" style="width: 1440px; height: 1024px; position: relative; background: white">
-            <div class="Rectangle29"
-                style="width: 1440px; height: 1021px; left: 0px; top: 3px; position: absolute; background: #ACD7F9">
-            </div>
+        <div class="HomePage">
+            <div class="Rectangle29"></div>
             <div class="AliceInWonderlan"
                 style="width: 824px; height: 613px; left: 114px; top: 220px; position: absolute"><span
                     style="color: black; font-size: 36px; font-family: Century Gothic; font-weight: 700; word-wrap: break-word">Lewis
@@ -31,9 +119,7 @@
                     logic and imagination? Lewis Carroll's 'Alice in Wonderland' is not just a book; it's an enchanting
                     journey into a <br />topsy-turvy realm of talking animals, nonsensical riddles, and unforgettable
                     adventures.</span></div>
-            <img class="Image1" style="width: 315px; height: 558px; left: 1030px; top: 255px; position: absolute"
-                src="./images/pexels.jpg" />
-
+            <img class="Image1" src="./images/pexels.jpg" />
             <div class="rectangle6">
                 <nav>
                     <div class="AliceInWonderlandByLewisCarroll">
@@ -63,9 +149,9 @@
                         </div>
                     </div>
                 </nav>
+            </div>
+        </div>
     </main>
-</body>
-
 </body>
 
 </html>
