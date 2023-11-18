@@ -6,73 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Add responsive styles here */
+        body {
+            background: #ACD7F9;
+            margin: 0;
+            /* Remove default margin to fill the entire viewport */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px; /* Add padding to the body */
+        }
+
+        .Author {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .rectangle6 {
+            width: 100%;
+            height: 73px;
+            left: 0;
+            top: 0;
+            position: fixed;
+            background: #D93824;
+            display: flex;
+            justify-content: center;
+            /* Center content horizontally */
+            align-items: center;
+            /* Center content vertically */
+        }
+
+        .nav-style {
+            color: white;
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
+            text-align: center;
+            /* Center the text */
+            margin: 0;
+            /* Remove any default margin */
+        }
+
+        .nav-style a {
+            display: inline-block;
+            margin: 0 15px;
+            /* Adjust margin for spacing */
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .Rectangle29,
+        .Rectangle30,
+        .Image1,
+        .Rectangle6,
+        .WebsiteTitle,
+        .Rectangle10,
+        .AuthorInfo {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .Rectangle29 {
+            height: 100vh;
+            background: #ACD7F9;
+        }
+
+        .Rectangle30 {
+            height: 309px;
+            background: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .Image1 {
+            width: 100%;
+            height: auto;
+            max-width: 600px; /* Set a maximum width for the image */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .LewisCarrollWasThePenName {
+            height: auto;
+            text-align: justify;
+            color: black; /* Set text color to white */
+            font-size: 26px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+            padding: 20px;
+            /* Add padding to the LewisCarrollWasThePenName */
+            margin: 0 20px; /* Adjust margin to avoid touching the edge */
+            background: transparent; /* Set background to transparent */
+        }
+
+        .Rectangle10 {
+            height: 73px;
+        }
+
+        .WebsiteTitle,
+        .AuthorInfo {
+            text-align: center;
+            color: black;
+            font-size: 36px;
+            font-family: Century Gothic;
+            font-weight: 700;
+            word-wrap: break-word;
+            margin-top: 20px;
+            /* Adjust margin-top */
+        }
+
+        .AliceInWonderlandByLewisCarroll {
+            color: black;
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .Rectangle30 {
+                height: auto;
+                /* Adjust height for smaller screens */
+            }
+
+            .Image1 {
+                width: 100%;
+                max-width: none; /* Remove max-width for smaller screens */
+            }
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .nav-style {
+                display: none;
+                /* Hide the nav links when the screen is smaller */
+            }
+
+            .rectangle6 .nav-style {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="Author" style="width: 1440px; height: 1024px; position: relative; background: white">
-        <div class="Rectangle29"
-            style="width: 1440px; height: 1021px; left: 0px; top: 0px; position: absolute; background: #ACD7F9"></div>
-        <div class="Rectangle30"
-            style="width: 797px; height: 309px; left: 285px; top: 694px; position: absolute; background: #0D50A1"></div>
-        <div class="LewisCarrollWasThePenName"
-            style="width: 1336px; height: 536px; left: 52px; top: 194px; position: absolute; text-align: justify; color: black; font-size: 26px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 500; word-wrap: break-word">
+    <div class="Author">
+
+        <div class="Rectangle10"></div>
+        <div class="AuthorInfo">Author Info:</div>
+
+        <div class="LewisCarrollWasThePenName">
             Lewis Carroll was the pen name of Charles Lutwidge Dodgson, a renowned English writer, mathematician,
-            logician, and photographer. He was born on January 27, 1832, in Daresbury, Cheshire, England, and passed
-            away on January 14, 1898, in Guildford, Surrey, England. Carroll is best known for his imaginative literary
-            works, particularly "Alice's Adventures in Wonderland" and its sequel, "Through the Looking-Glass."
-            <br /><br />Dodgson was the eldest son in a family of eleven children. He displayed an early aptitude for
-            mathematics and showed great promise in the subject. In 1851, he enrolled at Oxford University's Christ
-            Church, where he eventually became a mathematical lecturer and remained closely associated with the
-            institution for the rest of his life. It was during Dodgson's time at Oxford that he began developing the
-            stories that would later become "Alice's Adventures in Wonderland." In 1862, while on a boating trip with
-            the Liddell family, Dodgson told a tale to entertain the children, including Alice Liddell.
-            <br /><br />Encouraged by the positive reception, he later expanded the story into a manuscript, and it was
-            published in 1865 under the pseudonym Lewis Carroll. The book's whimsical characters, imaginative plot, and
-            clever wordplay made it an instant success and a beloved classic of children's literature.
+            logician, and photographer.
+            <br /><br />
+            He was born on January 27, 1832, in Daresbury, Cheshire, England, and passed away on January 14, 1898, in Guildford, Surrey, England. Carroll is best known for his imaginative literary works, particularly "Alice's Adventures in Wonderland" and its sequel, "Through the Looking-Glass."
+            <br /><br />
+            Dodgson was the eldest son in a family of eleven children. He displayed an early aptitude for mathematics and showed great promise in the subject. In 1851, he enrolled at Oxford University's Christ Church, where he eventually became a mathematical lecturer and remained closely associated with the institution for the rest of his life. It was during Dodgson's time at Oxford that he began developing the stories that would later become "Alice's Adventures in Wonderland." In 1862, while on a boating trip with the Liddell family, Dodgson told a tale to entertain the children, including Alice Liddell.
+            <br /><br />
+            Encouraged by the positive reception, he later expanded the story into a manuscript, and it was published in 1865 under the pseudonym Lewis Carroll. The book's whimsical characters, imaginative plot, and clever wordplay made it an instant success and a beloved classic of children's literature.
         </div>
-        <img class="Image1" style="width: 797px; height: 289px; left: 285px; top: 704px; position: absolute"
-            src="./images/Presence-Lewis-Carroll-Charles-Dodgson-631.webp" />
-        <div class="Rectangle6"
-            style="width: 1440px; height: 73px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-        <div class="WebsiteTitle"
-            style="width: 1300px; height: 51px; left: 72px; top: 12px; position: absolute; text-align: center; color: black; font-size: 40px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 700; word-wrap: break-word">
-            Website Title</div>
-        <div class="Rectangle10"
-            style="width: 1440px; height: 73px; left: 0px; top: 0px; position: absolute; background: #D93824"></div>
-        <div class="AuthorInfo"
-            style="left: 52px; top: 128px; position: absolute; text-align: center; color: black; font-size: 36px; font-family: Century Gothic; font-weight: 700; word-wrap: break-word">
-            Author Info:</div>
+
+        <div class="Rectangle30">
+            <img class="Image1" src="./images/Presence-Lewis-Carroll-Charles-Dodgson-631.webp" />
+        </div>
 
         <div class="rectangle6">
-            <nav>
-                <div class="AliceInWonderlandByLewisCarroll">
-                    <span
-                        style="color: white; font-size: 35px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 400; word-wrap: break-word"><a
-                            class="nav-links" href="index.html">Alice in Wonderland By Lewis Caroll</a></span><span
-                        style="color: white; font-size: 40px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 700; word-wrap: break-word">
-                    </span>
-                    <div class="AuthorInfo"
-                        style="width: 130px; height: 54px; left: 703px; top: 23px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-                        <div class="AuthorInfo"
-                            style="width: 130px; height: 54px; text-align: center; color: white; font-size: 24px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 300; word-wrap: break-word">
-                            <a class="nav-links" href="author.html">Author Info</a>
-                        </div>
-                    </div>
-                    <div class="nav-style" style="width: 170px;  left: 848px; ">
-                        <a class="nav-links" href="summary.html">Book Summary</a>
-                    </div>
-                    <div class="nav-style" style="width: 129px;  left: 1033px; ">
-                        <a class="nav-links" href="buyingInfo.html">Buying Info</a>
-                    </div>
-                    <div class="nav-style" style="width: 141px;  left: 1177px; ">
-                        <a class="nav-links" href="otherBooks.html">Other Books</a>
-                    </div>
-                    <div class="nav-style" style="width: 94px;  left: 1333px; ">
-                        <a class="nav-links" href="reviews.html">Reviews</a>
-                    </div>
-                </div>
+            <nav class="nav-style">
+                <a href="index.html">Alice in Wonderland By Lewis Caroll</a>
+                <a class="nav-links" href="author.html">Author Info</a>
+                <a class="nav-links" href="summary.html">Book Summary</a>
+                <a class="nav-links" href="buyingInfo.html">Buying Info</a>
+                <a class="nav-links" href="otherBooks.html">Other Books</a>
+                <a class="nav-links" href="reviews.html">Reviews</a>
             </nav>
+        </div>
+    </div>
 
 </body>
 

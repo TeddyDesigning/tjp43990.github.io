@@ -6,66 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/styles.css">
-    
+    <style>
+        /* Add responsive styles here */
+        body {
+            background: #ACD7F9;
+            margin: 0;
+            /* Remove default margin to fill the entire viewport */
+            font-family: 'Century Gothic', sans-serif;
+        }
+
+        .HomePage {
+            width: 100%;
+            min-height: 100vh;
+            height: auto;
+            margin-top: 54px;
+            /* Add margin to the top to keep it under the navbar */
+        }
+
+        .rectangle6 {
+            width: 100%;
+            height: 73px;
+            left: 0;
+            top: 0;
+            position: fixed;
+            background: #D93824;
+            display: flex;
+            justify-content: center;
+            /* Center content horizontally */
+            align-items: center;
+            /* Center content vertically */
+        }
+
+        .nav-style {
+            color: white;
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
+            text-align: center;
+            /* Center the text */
+            margin: 0;
+            /* Remove any default margin */
+        }
+
+        .nav-style a {
+            display: inline-block;
+            margin: 0 15px;
+            /* Adjust margin for spacing */
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .Rectangle29 {
+            width: 100%;
+            max-width: 824px;
+            height: auto;
+            min-height: 200px;
+            margin: 120px auto 20px;
+            /* Adjusted margin */
+            padding: 20px;
+            /* Add padding to the left and right */
+            box-sizing: border-box;
+            /* Include padding in width calculation */
+            text-align: center;
+            /* Center content horizontally */
+            display: flex;
+            flex-direction: column;
+            /* Change to column layout */
+            align-items: center;
+            /* Center items horizontally */
+        }
+
+        .AliceInWonderlan {
+            color: black;
+            font-size: 36px;
+            font-weight: 400;
+            word-wrap: break-word;
+            width: 100%;
+            /* Set width for the left column */
+            margin-bottom: 20px;
+            /* Space between text and image */
+        }
+
+        .Image1 {
+            max-width: 315px;
+            max-height: 558px;
+            width: 100%;
+            /* Set width for the right column */
+            height: auto;
+            margin-top: 200px;
+            /* Adjust margin-top */
+            margin-left: 1200px;
+        }
+
+        @media only screen and (max-width: 824px) {
+            .Rectangle29 {
+                margin: 20px auto;
+                /* Adjusted margin for smaller screens */
+                display: flex;
+                flex-direction: column;
+                /* Change back to column layout */
+                align-items: center;
+                /* Center items horizontally */
+            }
+
+            .AliceInWonderlan,
+            .Image1 {
+                width: 100%;
+                /* Set width to 100% on smaller screens */
+            }
+
+            .Image1 {
+                margin-top: 20px;
+                /* Space between text and image on smaller screens */
+            }
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .nav-style {
+                display: none;
+                /* Hide the nav links when the screen is smaller */
+            }
+
+            .rectangle6 .nav-style {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <main>
+    <main class="HomePage">
+        <div class="rectangle6">
+            <nav class="nav-style">
+                <a href="index.html">Alice in Wonderland By Lewis Caroll</a>
+                <a class="nav-links" href="author.html">Author Info</a>
+                <a class="nav-links" href="summary.html">Book Summary</a>
+                <a class="nav-links" href="buyingInfo.html">Buying Info</a>
+                <a class="nav-links" href="otherBooks.html">Other Books</a>
+                <a class="nav-links" href="reviews.html">Reviews</a>
+            </nav>
+        </div>
 
-        <div class="HomePage" style="width: 1440px; height: 1024px; position: relative; background: white">
-            <div class="Rectangle29"
-                style="width: 1440px; height: 1021px; left: 0px; top: 3px; position: absolute; background: #ACD7F9">
-            </div>
-            <div class="AliceInWonderlan"
-                style="width: 824px; height: 613px; left: 114px; top: 220px; position: absolute"><span
-                    style="color: black; font-size: 36px; font-family: Century Gothic; font-weight: 700; word-wrap: break-word">Lewis
-                    Carroll<br /></span><span
-                    style="color: black; font-size: 36px; font-family: Century Gothic; font-weight: 700; word-wrap: break-word"><br /></span><span
-                    style="color: black; font-size: 36px; font-family: Century Gothic; font-weight: 700; word-wrap: break-word">Alice
-                    In Wonderland<br /><br /></span><span
-                    style="color: black; font-size: 36px; font-family: Century Gothic; font-weight: 400; word-wrap: break-word">November
-                    1865<br /></span><span
-                    style="color: black; font-size: 36px; font-family: Century Gothic; font-weight: 700; word-wrap: break-word"><br /></span><span
-                    style="color: black; font-size: 36px; font-family: Century Gothic; font-weight: 400; word-wrap: break-word">Have
+        <div class="Rectangle29">
+            <div class="AliceInWonderlan">
+                <br /><br /><span>Lewis
+                    Carroll<br /></span><span><br /></span><span>Alice
+                    In Wonderland<br /><br /></span><span>November
+                    1865<br /></span><span><br /></span><span>Have
                     you ever wondered what it's like to fall down a rabbit hole into a world where everything defies
-                    logic and imagination? Lewis Carroll's 'Alice in Wonderland' is not just a book; it's an enchanting
-                    journey into a <br />topsy-turvy realm of talking animals, nonsensical riddles, and unforgettable
-                    adventures.</span></div>
-            <img class="Image1" style="width: 315px; height: 558px; left: 1030px; top: 255px; position: absolute"
-                src="./images/pexels.jpg" />
-
-            <div class="rectangle6">
-                <nav>
-                    <div class="AliceInWonderlandByLewisCarroll">
-                        <span
-                            style="color: white; font-size: 35px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 400; word-wrap: break-word"><a
-                                class="nav-links" href="index.html">Alice in Wonderland By Lewis Caroll</a></span><span
-                            style="color: white; font-size: 40px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 700; word-wrap: break-word">
-                        </span>
-                        <div class="AuthorInfo"
-                            style="width: 130px; height: 54px; left: 703px; top: 23px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-                            <div class="AuthorInfo"
-                                style="width: 130px; height: 54px; text-align: center; color: white; font-size: 24px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 300; word-wrap: break-word">
-                                <a class="nav-links" href="author.html">Author Info</a>
-                            </div>
-                        </div>
-                        <div class="nav-style" style="width: 170px;  left: 848px; ">
-                            <a class="nav-links" href="summary.html">Book Summary</a>
-                        </div>
-                        <div class="nav-style" style="width: 129px;  left: 1033px; ">
-                            <a class="nav-links" href="buyingInfo.html">Buying Info</a>
-                        </div>
-                        <div class="nav-style" style="width: 141px;  left: 1177px; ">
-                            <a class="nav-links" href="otherBooks.html">Other Books</a>
-                        </div>
-                        <div class="nav-style" style="width: 94px;  left: 1333px; ">
-                            <a class="nav-links" href="reviews.html">Reviews</a>
-                        </div>
-                    </div>
-                </nav>
+                    logic and imagination? Lewis Carroll's 'Alice in Wonderland' is not just a book; it's an
+                    enchanting journey into a topsy-turvy realm of talking animals, nonsensical riddles, and
+                    unforgettable adventures.</span>
+            </div>
+            <img class="Image1" src="./images/pexels.jpg" alt="pexels" />
+        </div>
     </main>
-</body>
-
 </body>
 
 </html>

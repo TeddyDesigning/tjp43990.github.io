@@ -6,85 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Other Books</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        body {
+            background-color: #ACD7F9;
+            margin: 0;
+            font-family: 'Century Gothic', sans-serif;
+        }
 
+        .OtherBooks {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            position: relative;
+            background: white;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: black;
+            font-size: 36px;
+            font-family: Century Gothic;
+            font-weight: 700;
+            word-wrap: break-word;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 400px;
+        }
+
+        .rectangle6 {
+            width: 100%;
+            height: 73px;
+            left: 0;
+            top: 0;
+            position: fixed;
+            background: #D93824;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .nav-style {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .nav-style a {
+            display: inline-block;
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .Column {
+            width: calc(33.33% - 20px);
+            height: auto;
+            position: relative;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .Column img {
+            width: 100%;
+            height: auto;
+            max-width: 352px;
+            margin-bottom: 20px;
+        }
+
+        .TextContainer {
+            width: 100%;
+            max-width: 352px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .TextContainer a {
+            color: black;
+        }
+
+        .OtherBooks {
+            position: relative;
+            text-align: center;
+            color: black;
+            font-size: 36px;
+            font-family: Century Gothic;
+            font-weight: 700;
+            word-wrap: break-word;
+            background-color: #ACD7F9;
+        }
+
+        @media only screen and (max-width: 960px) {
+            .rectangle6 {
+                padding: 0 10px;
+            }
+
+            .Column {
+                width: 100%;
+                max-width: none;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="OtherBooks" style="width: 1440px; height: 1024px; position: relative; background: white">
-        <div class="Rectangle29"
-            style="width: 1440px; height: 1021px; left: 0px; top: 73px; position: absolute; background: #ACD7F9"></div>
+    <div class="OtherBooks">
         <div class="rectangle6">
             <nav>
-                <div class="AliceInWonderlandByLewisCarroll">
-                    <span
-                        style="color: white; font-size: 35px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 400; word-wrap: break-word"><a
-                            class="nav-links" href="index.html">Alice in Wonderland By Lewis Caroll</a></span><span
-                        style="color: white; font-size: 40px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 700; word-wrap: break-word">
-                    </span>
-                    <div class="AuthorInfo"
-                        style="width: 130px; height: 54px; left: 703px; top: 23px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-                        <div class="AuthorInfo"
-                            style="width: 130px; height: 54px; text-align: center; color: white; font-size: 24px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 300; word-wrap: break-word">
-                            <a class="nav-links" href="author.html">Author Info</a>
-                        </div>
-                    </div>
-                    <div class="nav-style" style="width: 170px;  left: 848px; ">
-                        <a class="nav-links" href="summary.html">Book Summary</a>
-                    </div>
-                    <div class="nav-style" style="width: 129px;  left: 1033px; ">
-                        <a class="nav-links" href="buyingInfo.html">Buying Info</a>
-                    </div>
-                    <div class="nav-style" style="width: 141px;  left: 1177px; ">
-                        <a class="nav-links" href="otherBooks.html">Other Books</a>
-                    </div>
-                    <div class="nav-style" style="width: 94px;  left: 1333px; ">
-                        <a class="nav-links" href="reviews.html">Reviews</a>
-                    </div>
+                <div class="AliceInWonderlandByLewisCarroll nav-style">
+                    <a href="index.html">Alice in Wonderland By Lewis Caroll</a>
+                    <a class="nav-links" href="author.html">Author Info</a>
+                    <a class="nav-links" href="summary.html">Book Summary</a>
+                    <a class="nav-links" href="buyingInfo.html">Buying Info</a>
+                    <a class="nav-links" href="otherBooks.html">Other Books</a>
+                    <a class="nav-links" href="reviews.html">Reviews</a>
                 </div>
             </nav>
-        </div><img class="Image1" style="width: 352px; height: 372px; left: 72px; top: 203px; position: absolute"
-            src="./images/Jabberwocky.jpg" />
-        <img class="Image2" style="width: 352px; height: 372px; left: 544px; top: 203px; position: absolute"
-            src="./images/220px-The_Hunting_of_the_Snark_(cover).jpg" />
-        <img class="Image3" style="width: 352px; height: 372px; left: 1016px; top: 203px; position: absolute"
-            src="./images/220px-Sylvie_and_Bruno.gif" />
-        <div class="JabberwockyByLewisCarrollJabberwockyWikipedia"
-            style="width: 352px; height: 362px; left: 72px; top: 631px; position: absolute; text-align: center"><span
-                style="color: black; font-size: 36px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 600; word-wrap: break-word">Jabberwocky<br />by
-                Lewis Carroll<br /><br /></span><span
-                style="color: black; font-size: 36px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 700; word-wrap: break-word"><br /></span><span
-                style="color: #0D50A1; font-size: 32px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 300; text-decoration: underline; word-wrap: break-word">
-                <a href="https://en.wikipedia.org/wiki/Jabberwocky">
-                    Jabberwocky</a></span></div>
-
-
-        <div class="TheHuntingOfTheSnarkByLewisCarrollTheHuntingOfTheSnarkWikipedia"
-            style="width: 352px; height: 362px; left: 544px; top: 631px; position: absolute; text-align: center"><span
-                style="color: black; font-size: 36px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 600; word-wrap: break-word">The
-                Hunting of the Snark<br />
-                <a href="https://en.wikipedia.org/wiki/The_Hunting_of_the_Snark">
-                    The Hunting Of The Snark</a></span></div>
-
-        style="color: black; font-size: 36px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-weight: 300; word-wrap:
-        break-word"><br /></span><span
-            style="color: #0D50A1; font-size: 32px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 300; text-decoration: underline; word-wrap: break-word">The
-            Hunting of the Snark - Wikipedia</span>
+        </div>
+        <div class="Column">
+            <img class="Image1" src="./images/Jabberwocky.jpg" />
+            <div class="TextContainer">
+                <span><a href="https://en.wikipedia.org/wiki/Jabberwocky">Jabberwocky</a></span>
+            </div>
+        </div>
+        <div class="Column">
+            <img class="Image2" src="./images/220px-The_Hunting_of_the_Snark_(cover).jpg" />
+            <div class="TextContainer">
+                <span><a href="https://en.wikipedia.org/wiki/The_Hunting_of_the_Snark">The Hunting Of The Snark</a></span>
+            </div>
+        </div>
+        <div class="Column">
+            <img class="Image3" src="./images/220px-Sylvie_and_Bruno.gif" />
+            <div class="TextContainer">
+                <span><a href="https://en.wikipedia.org/wiki/Sylvie_and_Bruno">Sylvie And Bruno</a></span>
+            </div>
+        </div>
     </div>
-    <div class="SylvieAndBrunoByLewisCarrollSylvieAndBrunoWikipedia"
-        style="width: 352px; height: 362px; left: 1016px; top: 631px; position: absolute; text-align: center"><span
-            style="color: black; font-size: 36px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 600; word-wrap: break-word">Sylvie
-            and Bruno<br />by Lewis Carroll<br /><br /></span><span
-            style="color: black; font-size: 36px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 700; word-wrap: break-word"><br /></span><span
-            style="color: #0D50A1; font-size: 32px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 300; text-decoration: underline; word-wrap: break-word">
-            <a href="https://en.wikipedia.org/wiki/Sylvie_and_Bruno">
-                Sylvie And Bruno</a></span></div>
-    </div>
-    <div class="Other Books"
-        style="left: 52px; top: 128px; position: absolute; text-align: center; color: black; font-size: 36px; font-family: Century Gothic; font-weight: 700; word-wrap: break-word">
-        Other Books:</div>
-
 </body>
 
 </html>

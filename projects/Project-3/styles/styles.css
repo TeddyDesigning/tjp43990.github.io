@@ -1,61 +1,44 @@
 .rectangle6 {
-  width: 1440px;
+  width: 100%;
   height: 73px;
-  left: 0px;
-  top: 0px;
-  position: absolute;
+  left: 0;
+  top: 0;
+  position: fixed;
   background: #D93824;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.AliceInWonderlandByLewisCarroll {
-  width: 666px;
-  height: 51px;
-  left: 10px;
-  top: -4px;
-  position: absolute;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .quick-nav {
   top: 23px;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
-
+  position: fixed;
   text-align: center;
   color: white;
   font-size: 24px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
   word-wrap: break-word;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .nav-style {
-  height: 54px;
-  top: 23px;
-  position: absolute;
-  text-align: center;
   color: white;
   font-size: 24px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
-  word-wrap: break-word;
-  display: flex;
-  flex-wrap: wrap;
+  text-align: right;
+}
+
+.nav-links{
+  color: white;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  text-align: right;
 }
 
 img {
-  max-width: 100%;
+  max-width: 315px;
+  max-height: 558px;
   height: auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .container {
@@ -64,3 +47,23 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.body {
+  background-color: #ACD7F9;
+}
+
+.AliceInWonderlan {
+  width: 100%;
+  max-width: 824px;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+  position: absolute;
+  padding-right: 20px;
+  color: black;
+  font-size: 36px;
+  font-family: Century Gothic;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
