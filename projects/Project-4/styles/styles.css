@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    background-image: url(https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: repeat-y;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    font-family: Prata;
+    background-size: 100% 100%;
+  }
+  
+  header {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /* Add padding for space around the content */
+  }
+  
+  main {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .Nav {
+    position: relative;
+    width: 100%;
+    /* Use 100% width to make it fit within the entire page */
+    max-width: 1339px;
+    /* Set a maximum width if needed */
+    margin: 0 auto;
+    /* Center the navigation bar horizontally */
+    height: 279px;
+    z-index: auto;
+    /* Adjust the z-index value as needed */
+  }
+  
+  .Nav a:link,
+  .Nav a:visited,
+  .Nav a:hover,
+  .Nav a:active {
+    text-decoration: none;
+    /* Remove underline */
+    color: #DDCCB7;
+    /* Set the desired text color */
+  }
+  
+  .Ellipse3,
+  .Ellipse1,
+  .Ellipse2 {
+    position: absolute;
+    border-radius: 9999px;
+  }
+  
+  .Ellipse3 {
+    width: 508px;
+    height: 508px;
+    left: -457px;
+    top: -278px;
+    background: black;
+  }
+  
+  .Ellipse1 {
+    width: 492px;
+    height: 492px;
+    left: -449px;
+    top: -276px;
+    background: white;
+  }
+  
+  .Ellipse2 {
+    width: 470px;
+    height: 470px;
+    left: -438px;
+    top: -261px;
+    background: #684625;
+  }
+  
+  .Menu,
+  .HoursEvents,
+  .AboutUs {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 36px;
+    font-family: Prata;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #846434;
+  }
+  
+  .Menu {
+    width: 103px;
+    height: 70.16px;
+    left: 500px;
+    top: 47px;
+  }
+  
+  .HoursEvents {
+    width: 291px;
+    height: 70.16px;
+    left: 800px;
+    transform: translateX(-50%);
+    top: 47px;
+  }
+  
+  .BrewsBonds {
+    width: 374px;
+    height: 141.75px;
+    left: -395px;
+    top: -19px;
+    position: absolute;
+    text-align: center;
+    color: #DDCCB7;
+    font-size: 64px;
+    font-family: Princess Sofia;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .AboutUs {
+    left: 705px;
+    top: 46px;
+  }
+  
+  .WelcomeToBrewsAndBonds {
+    width: 100%;
+    /* Set width to 100% */
+    text-align: center;
+    margin: auto;
+    /* Center the element horizontally */
+    max-width: 900px;
+    /* Set a maximum width for better readability */
+    padding: 20px;
+    /* Add some padding for space around the content */
+    font-family: Prata;
+  }
+  
+  .WelcomeToBrewsAndBonds span {
+    font-size: 36px;
+    font-family: Prata;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  .WelcomeToBrewsAndBonds span:first-child {
+    color: #D6D2D2;
+  }
+  
+  .WelcomeToBrewsAndBonds span:nth-child(2) {
+    color: #D6D2D2;
+  }
+  
+  .WelcomeToBrewsAndBonds span:last-child {
+    color: #D6D2D2;
+  }
+  
+  .Footer {
+    width: 100%;
+    max-width: 100%;
+    /* Set max-width to 100% */
+    height: 48px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .Rectangle19 {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    background: #D0C0AD;
+    left: 0;
+  }
+  
+  .phone {
+    left: 50%;
+    /* Center the phone text */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    top: 15px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .Image11,
+  .Image12,
+  .Image13,
+  .LogoBlack1 {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 8px;
+  }
+  
+  .Image11 {
+    right: 20px;
+  }
+  
+  .Image12 {
+    right: 85px;
+  }
+  
+  .Image13 {
+    right: 1050px;
+  }
+  
+  .LogoBlack1 {
+    right: 150px;
+  }
+  
+  .BrewsBonds20xx {
+    left: 30px;
+    top: 15px;
+    position: absolute;
+    color: #181924;
+    font-size: 24px;
+    font-family: Prata;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .MenuPage {
+    display: flex;
+  }
+  
+  .MenuColumn {
+    width: 30%;
+    padding: 20px;
+  }
+  
+  .MenuColumn:nth-child(2) {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  .MenuColumn.ImageColumn {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .Image1,
+  .Image2,
+  .PexelsImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    /* Add margin to the bottom of each image */
+  }
+  
+  .LatteArt,
+  .BestTea,
+  .TryOurParfait {
+    margin-bottom: 20px;
+    /* Add margin to the top of each caption */
+    font-family: Prata;
+  }
+  
+  .MenuLink,
+  .MenuTitle,
+  .Drinks span,
+  .Tea span,
+  .Food span,
+  .PricesDrinksTea span,
+  .PricesFood span,
+  .LatteArt,
+  .BestTea,
+  .TryOurParfait,
+  .PhoneNumber,
+  .Copyright {
+    color: white;
+    /* Set text color to white for specific elements */
+    font-family: Prata;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media only screen and (max-width: 600px) {
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    nav li:nth-child(3) {
+      margin-left: 0;
+    }
+  
+    .Menu,
+    .HoursEvents,
+    .AboutUs,
+    .BrewsBonds {
+      font-size: 24px;
+    }
+  
+    .BrewsBonds {
+      font-size: 36px;
+    }
+  
+    .WelcomeToBrewsAndBonds span {
+      font-size: 24px;
+    }
+  
+    .phone {
+      font-size: 16px;
+      /* Adjusted font size for the phone number */
+    }
+  
+    .Image11,
+    .Image12,
+    .Image13,
+    .LogoBlack1 {
+      width: 24px;
+      /* Adjusted width for the images in the footer */
+      height: 24px;
+      /* Adjusted height for the images in the footer */
+    }
+  
+    .BrewsBonds20xx {
+      font-size: 12px;
+      /* Adjusted font size for the copyright text */
+    }
+  }
+  

@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    background-image: url(https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding: 20px;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .MenuLink,
+  .HoursEventsLink,
+  .BrewsBondsLink,
+  .AboutUsLink {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 36px;
+    font-family: Prata;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #846434;
+  }
+  
+  .MenuLink {
+    width: 103px;
+    height: 70.16px;
+    left: 600px;
+    top: 47px;
+  }
+  
+  .HoursEventsLink {
+    width: 271px;
+    height: 70.16px;
+    left: 1000px;
+    top: 47px;
+  }
+  
+  .BrewsBondsLink {
+    width: 374px;
+    height: 141.75px;
+    left: -695px;
+    top: 10px;
+    color: #DDCCB7;
+    font-size: 64px;
+    font-family: Princess Sofia;
+    font-weight: 400;
+  }
+  
+  .AboutUsLink {
+    left: 1205px;
+    top: 46px;
+  }
+  
+  .MenuPage {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .MenuColumn {
+    width: 50%;
+    text-align: justify;
+    color: rgba(177, 156, 217, 0.93);
+    font-size: 24px;
+    font-family: Prata;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .MenuTitle,
+  .Drinks,
+  .Tea,
+  .Food {
+    margin-bottom: 20px;
+  }
+  
+  .PricesDrinksTea,
+  .PricesFood {
+    width: 69px;
+    color: white;
+    font-size: 24px;
+    font-family: Prata;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .BackgroundPrices {
+    width: 476px;
+    height: 1239px;
+    background: rgba(0, 0, 0, 0.80);
+  }
+  
+  .ImageColumn {
+    width: 48%;
+  }
+  
+  .Image1,
+  .Image2,
+  .PexelsImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .LatteArt,
+  .BestTea,
+  .TryOurParfait {
+    color: rgba(177, 156, 217, 0.93);
+    font-size: 24px;
+    font-family: Prata;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .PromoBackground {
+    width: 280px;
+    height: 68px;
+    background: rgba(0, 0, 0, 0.80);
+  }
+  
+  .Footer {
+    width: 100%;
+    height: 78px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .Rectangle19 {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    background: #D0C0AD;
+    left: 0;
+  }
+  
+  .FacebookIcon,
+  .InstagramIcon,
+  .PhoneIcon,
+  .LogoBlack {
+    position: absolute;
+  }
+  
+  .FacebookIcon {
+    width: 58px;
+    height: 58px;
+    left: 2750px;
+    top: 9px;
+  }
+  
+  .InstagramIcon {
+    width: 60px;
+    height: 60px;
+    left: 2650px;
+    top: 8px;
+  }
+  
+  .PhoneNumber {
+    left: 1350px;
+    top: 21px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .PhoneIcon {
+    width: 50px;
+    height: 50px;
+    left: 1280px;
+    top: 14px;
+    position: absolute;
+  }
+  
+  .LogoBlack {
+    width: 57px;
+    height: 52px;
+    left: 2550px;
+    top: 12px;
+    position: absolute;
+  }
+  
+  .Copyright {
+    left: 30px;
+    top: 19px;
+    position: absolute;
+    color: #181924;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link href='https://fonts.googleapis.com/css?family=Princess Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            background-image: url(https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+            padding: 20px;
+        }
+
+        #content>div {
+            background-color: rgba(255, 255, 255, 0.7);
+            margin: 2px 0;
+        }
+
+        header {
+            position: relative;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav li:nth-child(3) {
+            margin-left: auto;
+            /* Updated to move the BrewsBonds to the right */
+        }
+
+        .BrewsBonds {
+            margin-right: 200px;
+            /* Adjust the right margin as needed */
+            left: -160px;
+        }
+
+        .Ellipse3 {
+            width: 508px;
+            height: 508px;
+            left: -226px;
+            top: -278px;
+            background: black;
+        }
+
+        .Ellipse1 {
+            width: 492px;
+            height: 492px;
+            left: -216px;
+            top: -276px;
+            background: white;
+        }
+
+        .Ellipse2 {
+            width: 470px;
+            height: 470px;
+            left: -205px;
+            top: -261px;
+            background: #684625;
+        }
+
+
+        .Menu {
+            width: 103px;
+            height: 70.16px;
+            left: 650px;
+            top: 70px;
+        }
+
+        .HoursEvents {
+            width: 291px;
+            height: 70.16px;
+            left: 1000px;
+            top: 70px;
+            transform: translateX(-50%);
+        }
+
+        .MenuLink {
+            color: rgba(177, 156, 217, 0.93);
+            font-size: 24px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .MenuTitle {
+            color: rgba(177, 156, 217, 0.93);
+            font-size: 24px;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="Nav">
+                    <div class="Ellipse3"></div>
+                    <div class="Ellipse1"></div>
+                    <div class="Ellipse2"></div>
+                    <div class="Menu">
+                        <li><a href="menu.html">Menu</a></li>
+                    </div>
+                    <div class="HoursEvents">
+                        <li><a href="HoursAndEvents.html">Hours & Events</a></li>
+                    </div>
+                    <div class="BrewsBonds">
+                        <li><a href="index.html">Brews & Bonds</a></li>
+                    </div>
+                    <div class="AboutUs">
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="MenuPage">
+        <!-- Column 1: Menu -->
+        <div class="MenuColumn">
+            <div class="MenuLink">Menu</div>
+            <br>
+            <div class="MenuTitle">Drinks:</div>
+            <br>
+            <div class="Drinks">
+                <span>Coffee:</span><br>
+                <span>Espresso<br />Americano<br />Latte<br />Cappuccino<br />Mocha<br />Macchiato<br />Flat
+                    White<br />Iced Coffee<br />Cold Brew<br />Frappuccino<br />Hot Chocolate</span>
+            </div>
+            <br>
+            <div class="MenuTitle">Tea:</div>
+            <div class="Tea">
+                <span>Chai Tea Latte<br />Matcha Latte<br />Herbal Tea<br />Iced Tea<br />Smoothie <br /></span>
+                <span>Black Tea:</span><br>
+                <span>Earl Grey<br />English Breakfast<br />Darjeeling Tea<br />Assam Tea<br /></span>
+                <span>Green Tea:</span><br>
+                <span>Green Tea<br />Jasmine Tea<br />Sencha Tea<br />Genmaicha Tea<br /></span>
+                <span>Herbal Infusions:</span><br>
+                <span>Chamomile Tea<br />Rooibos Tea<br />Matcha Tea<br />Oolong Tea<br />White Tea<br />Herbal Blend
+                    (e.g., hibiscus, ginger, lemongrass)<br /></span>
+                <span>Flavored Teas:</span><br>
+                <span>Chai Tea<br />Lemon Verbena Tea<br />Mint Tea<br />Berry Infusion (e.g., raspberry,
+                    strawberry)</span>
+            </div>
+            <br>
+            <div class="MenuTitle">Food:</div>
+            <br>
+            <div class="Food">
+                <span>Croissant <br />Bagel <br />Muffin <br />Scone <br />Sandwich </span>
+                <span>(e.g., ham and cheese, turkey and avocado)</span>
+                <span>Salad </span>
+                <span>(e.g., chicken Caesar, Greek)</span><br>
+                <span>Quiche <br />Soup of the Day <br />Fruit Parfait <br /></span>
+            </div>
+        </div>
+
+        <!-- Column 2: Prices -->
+        <div class="MenuColumn PricesColumn">
+            <div class="MenuTitle"> Prices:</div>
+            <br>
+            <br>
+            <div class="MenuColumn PricesColumn">
+                <div class="PricesDrinksTea">
+                    <div class="PriceItem"><br><br>
+                        $2.50<br />$3.00<br />$4.00<br />$4.00<br />$4.50<br />$4.50<br />$4.50<br />$4.00<br />$4.50<br />$5.00<br />$3.50
+                    </div>
+                    <br><br>
+                    <div class="PriceItem">$4.50<br />$4.50<br />$3.00<br />$3.50<br />$5.00</div>
+                    <br>
+                    <div class="PriceItem">
+                        $4.50<br /><br><br><br>$5.00<br /><br><br><br><br>$3.00<br /><br><br><br><br><br><br>
+                        <br<br><br><br>$4.00<br /><br><br><br><br><br><br><br>
+                    </div><br>
+                    <div class="PriceItem">$2.50<br />$5.50<br />$4.50</div>
+                    <div class="PriceItem">$4.50</div>
+                    <div class="PriceItem">$5.00</div>
+                    <br><br>
+                    <div class="PriceItem">$7.50</div>
+                    <div class="PriceItem">$3.00</div>
+                    <div class="PriceItem">$4.00</div>
+                </div>
+            </div>
+            <div class="PricesDrinksTea">
+
+            </div>
+        </div>
+
+        <!-- Column 3: Pictures with Captions -->
+        <div class="MenuColumn ImageColumn">
+            <img class="Image1" src="images/latte.jpg" alt="Image 1" />
+            <div class="LatteArt">Latte Art Yum!</div>
+            <img class="Image2" src="images/tea.jpg" alt="Image 2" />
+            <div class="BestTea">Best Tea Around!</div>
+            <img class="PexelsImage" src="images/pexels-anastasia-belousova-4696279.jpg" alt="Image 3" />
+            <div class="TryOurParfait">Try Our Parfait!</div>
+            <div class="PromoBackground"></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="Footer">
+            <div class="Rectangle19"></div>
+            <img class="Image11" src="images/facebook.png" />
+            <img class="Image12" src="images/Instagram_Glyph_Black.png" />
+            <div class="phone">+1 (121) 123-4567</div>
+            <img class="Image13" src="images/phone-call.png" />
+            <img class="LogoBlack1" src="images/logo-black.png" />
+            <div class="BrewsBonds20xx">©Brews&Bonds 20XX</div>
+        </div>
+    </main>
+</body>
+
+</html>
