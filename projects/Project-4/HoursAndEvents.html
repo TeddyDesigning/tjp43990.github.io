@@ -106,25 +106,33 @@
             text-align: justify;
             margin: 20px auto;
             padding: 20px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .event-title {
             color: rgba(177, 156, 217, 0.93);
-            font-size: 24px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: bold;
             word-wrap: break-word;
+            display: block;
+            margin-top: 20px;
         }
 
         .day {
+            display: block;
             font-size: 20px;
             font-weight: 400;
             word-wrap: break-word;
+            margin-bottom: 10px;
         }
 
         .event-details {
-            font-size: 20px;
+            display: block;
+            font-size: 16px;
             font-weight: 400;
             word-wrap: break-word;
+            margin-bottom: 10px;
         }
 
         .hours-events {
@@ -143,22 +151,39 @@
             height: 87px;
             text-align: justify;
             color: white;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 400;
             word-wrap: break-word;
-            margin: 10px auto 20px;
+            margin: 20px;
             /* Adjust the top margin as needed */
         }
 
         .HoursHeading {
+            /* Add the styles for .HoursHeading here */
             width: 361px;
             height: 33px;
             text-align: justify;
             color: rgba(177, 156, 217, 0.93);
-            font-size: 48px;
+            font-size: 24px;
             font-family: Prata;
-            font-weight: 400;
+            font-weight: bold;
             word-wrap: break-word;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media only screen and (max-width: 600px) {
+            .event-title {
+                font-size: 18px;
+            }
+
+            .event-details {
+                font-size: 14px;
+            }
+
+            .note {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -248,6 +273,7 @@
         </div>
         <div class="note">Please note that specific event dates and times may vary, and it's always a good idea to check
             with the coffee shop for the most up-to-date information and any additional events they may offer.</div>
+
 </body>
 
 <!-- Footer -->

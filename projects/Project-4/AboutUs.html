@@ -55,24 +55,25 @@
     }
 
     .container {
-      display: flex;
-    }
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
 
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
+.content {
+  flex: 1;
+  padding: 20px;
+  order: 1; /* Set the order to 1 to move the content column to the left */
+}
 
-    .image {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      /* Change align-items to flex-start to move the image up */
-      margin-top: 25px;
-      /* Adjust the margin-top as needed to control the spacing */
-      margin-right: -20px;
-    }
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 108px;
+  margin-left: -20px; /* Adjusted margin-left to move the image column to the right */
+  order: 2; /* Set the order to 2 to move the image column to the right */
+}
 
     .text {
       color: white;
@@ -82,10 +83,10 @@
     }
 
     .Image1 {
-      width: 100%;
-      max-width: 530px;
-      height: auto;
-    }
+  width: 100%;
+  max-width: 530px;
+  height: auto;
+}
 
     .AboutUsHeading {
       width: 361px;
@@ -97,6 +98,89 @@
       font-weight: 400;
       word-wrap: break-word;
     }
+
+ /* Media Queries for Responsive Design */
+ @media only screen and (max-width: 600px) {
+
+  .container {
+    flex-direction: column; /* Change to a single column layout on small screens */
+  }
+
+  .content,
+  .image {
+    order: unset; /* Reset the order on small screens to maintain natural stacking order */
+    width: 100%; /* Make both columns take the full width on small screens */
+    margin-left: 0; /* Remove the margin on the left for the image column */
+  }
+
+      nav ul {
+        text-align: center;
+      }
+
+      nav li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      nav li:nth-child(3) {
+        margin-left: 0;
+      }
+
+      .Menu,
+      .HoursEvents,
+      .AboutUs,
+      .BrewsBonds {
+        font-size: 24px;
+      }
+
+      .BrewsBonds {
+        font-size: 36px;
+      }
+
+      .WelcomeToBrewsAndBonds span {
+        font-size: 24px;
+      }
+
+      .phone {
+        font-size: 16px;
+        /* Adjusted font size for the phone number */
+      }
+
+      .Image11,
+      .Image12,
+      .Image13,
+      .LogoBlack1 {
+        width: 24px;
+        /* Adjusted width for the images in the footer */
+        height: 24px;
+        /* Adjusted height for the images in the footer */
+      }
+
+      .BrewsBonds20xx {
+        font-size: 12px;
+        /* Adjusted font size for the copyright text */
+      }
+
+      .MenuColumn {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .MenuColumn.ImageColumn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .Image1,
+      .Image2,
+      .PexelsImage {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        /* Add margin to the bottom of each image */
+      }
+    }
+
   </style>
 </head>
 
